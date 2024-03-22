@@ -37,31 +37,32 @@
         <div class="row justify-content-center">
             <!-- INPUT BOX -->
             <div class="col-8">
-                <input type="text" id="nameInputBox">
+                <input type="text" id="nameInput" placeholder="Enter a name">
             </div>
 
 
             <!-- SAVE NAMES BUTTON -->
-            <div class="col-4">
-                <div class="btn rounded-3 border-black bg-success"><h6 class="text-white">Save Name</h6></div>
+            <div class="col-4" mt-5>
+                <button class="btn rounded-3 border-black bg-success" id="addNameBtn"><h6 class="text-white">Save Name</h6></button>
             </div>
         </div>
 
         <!-- DIV TO DISPLAY NAMES-->
-        <div class="row">
-            <div class="col-8 rounded-3 border-black border-3" id="nameDisplayDiv"></div>
+        <div class="row mt-5">
+            <ul id="nameList" class="list-group"></ul>
+            <div class="col-10 border rounded-3 border-black border-3"><h1 class="text-center">Div to display names</h1></div>
         </div>
 
         <!-- BUTTON TO RANDOMLY SELECT NAME -->
-        <div class="row justify-content-center">
+        <div class="row justify-content-center mt-5">
             <div class="col-6">
-                <div class="btn rounded-3 border-black bg-success"><h4 class="text-white">Select Random Name</h4></div>
+                <button class="btn rounded-3 border-black bg-success" id="pickRandomBtn"><h4 class="text-white">Select Random Name</h4></button>
             </div>
         </div>
 
         <!-- DIV TO DISPLAY RANDOMLY SELECTED NAME -->
-        <div class="row">
-            <div class="col-8 rounded-3 border-black border-3" id="selectedNameDiv"></div>
+        <div class="row mt-5">
+            <div class="col-10 border rounded-3 border-black border-3" id="randomName"><h1 class="text-center">Div to display random name</h1></div>
         </div>
     </div>
 
