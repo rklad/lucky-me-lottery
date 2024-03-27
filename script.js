@@ -11,23 +11,44 @@ function addName() {
 }
 
 
-function displayNames(){
+function displayNames() {
     const nameList = document.getElementById('nameList') //GET UL ELEMENT
     nameList.innerHTML = '' //CLEARS THE LIST 
 
     for (let i = 0; i < nameArray.length; i++) { //0 IS THE FIRST TIME THROUGH THE LOOP
         const name = nameArray[i] //GET THE CURRENT NAME FROM THE ARRAY
-        
+
         const li = document.createElement('li')
         li.className = 'list-group-item'
         const span = document.createElement('span')
-        span.textContent = name 
-        
+        span.textContent = name
+
         li.appendChild(span) //PUTS SPAN TAG INSIDE OF LI 
 
         nameList.appendChild(li)
     }
 
-    } 
+}
+
+
+
+function pickRandomName() {
+    const randomNameDiv = document.getElementById('randomName')
+    randomNameDiv.textContent = ''
+
+
+    const randomNumber = Math.floor(Math.random() * nameArray.length)
+    const randomName = nameArray[randomNumber]
+
+    randomNameDiv.textContent = randomName
+
+    nameArray.splice(randomNumber, 1)
+
+    displayNames()
+}
+
+
 
 document.getElementById('addNameBtn').addEventListener('click', addName)
+
+document.getElementById('pickRandomBtn').addEventListener('click', pickRandomName)

@@ -29,15 +29,13 @@
                 <h4 class="text-success">Welcome to Lucky You Lottery! Enter a name in the text box below, click on the button to the right of the text box to save that name to the list. Repeat this process until you have your full list of names. Click on the 'Select Name' button to randomly select one of your names</h4>
             </div>
         </div>
-    </div>
 
 
     <!--INPUT BOX AND BUTTON TO SAVE NAMES-->
-    <div class="container ">
         <div class="row justify-content-center">
             <!-- INPUT BOX -->
             <div class="col-8">
-                <input type="text" id="nameInput" placeholder="Enter a name">
+                <input class="text-center " type="text" id="nameInput" placeholder="Enter a name">
             </div>
 
 
@@ -48,9 +46,9 @@
         </div>
 
         <!-- DIV TO DISPLAY NAMES-->
-        <div class="row mt-5">
-            <ul id="nameList" class="list-group"></ul>
-            <div class="col-10 border rounded-3 border-black border-3"><h1 class="text-center">Div to display names</h1></div>
+        <div class="row mt-5 justify-content-center">
+            <ul id="nameList" class="list-group col-10 border rounded-3 border-black border-3 text-center"></ul>
+            <div class="col-10 border rounded-3 border-black border-3 d-none"><h1 class="text-center">Div to display names</h1></div>
         </div>
 
         <!-- BUTTON TO RANDOMLY SELECT NAME -->
@@ -61,8 +59,8 @@
         </div>
 
         <!-- DIV TO DISPLAY RANDOMLY SELECTED NAME -->
-        <div class="row mt-5">
-            <div class="col-10 border rounded-3 border-black border-3" id="randomName"><h1 class="text-center">Div to display random name</h1></div>
+        <div class="row mt-5 justify-content-center">
+            <div class="col-10 border rounded-3 border-black border-3 text-center" id="randomName"><h1>Div to display random name</h1></div>
         </div>
     </div>
 
